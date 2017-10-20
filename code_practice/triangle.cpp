@@ -11,7 +11,6 @@ Triangle::Triangle() {}
 int Triangle::Test(vector<int> & A)
 {
     unsigned int i;
-    unsigned int p, q, r;
 
     stable_sort(A.begin(), A.end());
 
