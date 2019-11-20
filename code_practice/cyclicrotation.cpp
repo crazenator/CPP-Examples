@@ -13,11 +13,11 @@ vector<int> CyclicRotation::Test(vector<int> &A, int K)
     K %= A.size();
 
     pushIdx = 0;
-    popIdx = A.size() - K;
+    popIdx = K;
 
     for (auto element : A)
     {
-        B.insert(B.begin() + pushIdx, element);
+        B.insert(B.begin() + pushIdx, A.at(popIdx));
 
         pushIdx++;
         popIdx = (popIdx + 1) % A.size();
